@@ -2,7 +2,7 @@ import set ;
 
 lib sqlite 
 	: [ set.difference [ glob *.c ] : shell.c tclsqlite.c ] 
-	: <version>3.3.7 <warnings>off <include>.
+	: <version>3.3.7 <include>.
 ;
 
 install ../lib : sqlite ;
