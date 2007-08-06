@@ -1,0 +1,9 @@
+import set ;
+
+lib sqlite 
+	: [ set.difference [ glob *.c ] : shell.c tclsqlite.c ]
+	: <version>3.4.1 <include>.
+;
+
+install ../lib : sqlite ;
+install ../include : sqlite3.h ;
