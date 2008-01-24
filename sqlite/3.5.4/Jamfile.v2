@@ -1,0 +1,6 @@
+import set ;
+
+lib sqlite : sqlite3.c : <version>3.5.4 <include>. ;
+
+install ../lib : sqlite ;
+install ../include : sqlite3.h ;
