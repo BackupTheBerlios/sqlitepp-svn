@@ -12,8 +12,8 @@
 #include <vector>
 
 #include "string.hpp"
-#include "query.hpp" 
-#include "converters.hpp" 
+#include "query.hpp"
+#include "converters.hpp"
 
 struct sqlite3_stmt;
 
@@ -48,9 +48,9 @@ public:
 	void finalize(bool check_error = true);
 
 	// Is statement prepared.
-	bool is_prepared() const // throw() 
+	bool is_prepared() const // throw()
 	{
-		return impl_ != 0; 
+		return impl_ != 0;
 	}
 
 	/// SQLite statement implementation for sqlite3 functions

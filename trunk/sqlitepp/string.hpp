@@ -33,10 +33,10 @@ template<size_t Size>
 struct utf_char_selector
 {
 	class unknown_char_type;
-	typedef 
+	typedef
 		typename if_<sizeof(wchar_t) == Size, wchar_t,
 		typename if_<sizeof(unsigned short) == Size, unsigned short,
-		typename if_<sizeof(unsigned int) == Size, unsigned int, 
+		typename if_<sizeof(unsigned int) == Size, unsigned int,
 			unknown_char_type>::type>::type>::type type;
 };
 

@@ -33,7 +33,7 @@ public:
 	{
 		return code_;
 	}
-private:	
+private:
 	int code_;
 };
 

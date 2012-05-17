@@ -100,11 +100,13 @@ public:
 
 	// Swap queries.
 	friend void swap(query& lhs, query& rhs);
-protected:	
+
+protected:
 	// Noncopyable.
 	query(query const& src);
 	// Nonassignable.
 	query& operator=(query const& src);
+
 private:
 	into_binders intos_;
 	use_binders  uses_;

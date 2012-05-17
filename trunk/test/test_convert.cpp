@@ -58,7 +58,7 @@ struct converter<my_data>
 	}
 };
 
-} // namespace sqlitepp 
+} // namespace sqlitepp
 
 namespace tut {
 

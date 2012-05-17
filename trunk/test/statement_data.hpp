@@ -40,8 +40,9 @@ struct statement_data : session_data
 };
 
 namespace tut {
-void ensure_equals(statement_data::record const& r1, 
-				   statement_data::record const& r2);
+
+void ensure_equals(statement_data::record const& r1, statement_data::record const& r2);
+
 } // namespace tut {
 
 

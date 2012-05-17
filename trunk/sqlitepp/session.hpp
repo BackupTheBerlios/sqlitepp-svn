@@ -59,7 +59,7 @@ public:
 	// If we have the transaction, we get it or null otherwise.
 	transaction* active_txn() const // throw()
 	{
-		return active_txn_; 
+		return active_txn_;
 	}
 
 	/// SQLite implementation for native sqlite3 functions.
